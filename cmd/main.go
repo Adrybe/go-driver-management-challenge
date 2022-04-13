@@ -17,6 +17,6 @@ func main() {
 	})
 	//r.Run() // listen and serve on 0.0.0.0:8080 (for windows "localhost:8080")
 	log.Println("Server started on port " + port)
-	//r.Run(port)
-	http.ListenAndServe(port, r)
+	r.Run(":3000")
+	//http.ListenAndServe(port, r)
 }
