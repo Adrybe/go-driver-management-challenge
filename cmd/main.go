@@ -8,6 +8,9 @@ import (
 
 func main() {
 	port := os.Getenv("PORT")
+	if len(port) == 0 {
+		port = "8080"
+	}
 	//port = ":" + port
 
 	r := gin.Default()
